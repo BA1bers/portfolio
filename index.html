@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link rel="stylesheet" href="./assets/style.css">
     <title>Brent Albers</title>
 </head>
 
@@ -13,20 +15,20 @@
             <a href="/">BRENT ALBERS</a>
         </h1>
         <nav>
-            <ul>
+            <ul class="">
                 <li>
-                    <a href="#profile">About Me</a>
+                    <a class="" href="#profile">About Me</a>
                 </li>
                 <li>
-                    <a href="#work">Work Experience</a>
+                    <a class="" href="#work">Work Experience</a>
                 </li>
                 <li>
-                    <a href="#contact">Contact Info</a>
+                    <a class="" href="#contact">Contact Info</a>
                 </li>
             </ul>
         </nav>
     </header>
-    
+    <div class="container">
     <section class="hero">
         <div class="hero-CTA">
         <img src="" alt="">
@@ -34,74 +36,84 @@
     </section>
 
     <section id="profile" class="about-me">
-        <div class="">
-            <h2>About Me</h2>
-            <!--Profile Picture-->
-                <img src="" alt="Brent's photo"/>
+        <div class="flex-row">
+            <h2 class="section-title">About Me</h2>
         </div>
-        <div class="profileintro">
+        <div class="profile-photo">
+        <img src="./assets/images/20210516-120549.jpg" alt="Brent's photo"/>
+        </div>
+        <div class="flex-row">
             <p>
                 Hello, my name is Brent Albers. I am currently enrolled in University of Arizona's coding boot camp. 
             </p>
         </div>
     </section>
 
-    <section id="work" class="experience">
-        <div class="">
-            <h2>My Work Experience</h2>
+    <section id="work">
+        <div class="flex-row">
+            <h2 class="section-title">
+                My Work Experience
+            </h2>
         </div>
         <div class="projects">
-            <h3>Run Buddy</h3>
+            <article class="project">
             <div class="runbuddy-photo">
-            <img src="./assets/images/runbuddy/runbuddy.PNG" alt="runbuddy-photo"/>
+            <img src="./assets/images/rb.PNG" alt="runbuddy-photo"/>
             </div>
             <div class="project-info">
-                <p>
-                    Run Buddy was built as a service that allows runners sign up for personal training. This was my first go at html and css.
-                </p>
+                <h3 class="project-name">Run Buddy</h3>
+                <h4 class="project-languages">Project Language(s): HTML,CSS</h4>
+                <p>Run Buddy was built as a service that allows runners sign up for personal training. This was my first go at html and css.</p>
             </div>
-            <div class="runners-photo">
-            <img src="./assets/images/runbuddy/runbuddy2.PNG" alt="runners"/>
-            </div>
+            </article>
         </div>
         <div class="projects">
-            <h3>Horiseon</h3>
+            <article class="project">
             <div class="horiseon-photo">
             <img src="./assets/images/Horiseon.png" alt="horiseon"/>
             </div>
             <div class="project-info">
+                <h3 class="project-name">Horiseon</h3>
+                <h4 class="project-languages">Project Language(s): HTML,CSS</h4>
                 <p>
                     Horiseon Info
                 </p>
             </div>
+            </article>
+        </div>
         <div class="projects">
-            <h3>Password Generator</h3>
+            <article class="project">
             <div class="password-photo">
             <img src="./assets/images/passwordgenerator.png" alt="password-generator"/>
             </div>
             <div class="project-info">
+                <h3 class="project-name">Password Generator</h3>
+                <h4 class="project-languages">Project Language(s): Javascript</h4>
                 <p>
                     Coming Soon!
                 </p>
             </div>
-        </div>
+            </article>
         </div>
     </section>
 
     <section id="contact" class="contact">
-        <h2>How to contact me</h2>
+        <div class="contact-form">
+        <h2>Want to get in contact with me?</h2>
+        <p> Fill out this form and I will get back to you as soon as possible</p>
         <form>
-            <label for="contactname">Input Your Name:</label>
-            <input type="text" id="contactname" name="contactname" placeholder="Name">
-
-            <label for="contactemail">Input Your Email:</label>
-            <input type="email" id="contactemail" name="contactemail" placeholder="Email:">
-
-            <label for="contactmessage">Input Your Message:</label>
-            <textarea id="contactmessage" name="contactmessage" placeholder="Message:"></textarea>
+            <label for="name">Your Name</label>
+            <input type="name" placeholder="Your Name" id="name" name="name" class="form-input" />
+            <label for="email">Your Email</label>
+            <input type="email" placeholder="Email Address" id="email" name="email" class="form-input" />
+            <label for="contactmessage">Leave a Message</label>
+            <input type="contactmessage" placeholder="Message" id="contactmessage" name="contactmessage" class="form-input" />
 
             <button type="submit">Submit</button>
         </form>
+        </div>
     </section>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
 </body>
 </html>
