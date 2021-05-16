@@ -15,17 +15,93 @@
         <nav>
             <ul>
                 <li>
-                    <a href="#about">About Me</a>
+                    <a href="#profile">About Me</a>
                 </li>
                 <li>
-                    <a href="work">Work Experience</a>
+                    <a href="#work">Work Experience</a>
                 </li>
                 <li>
-                    <a href="contact">Contact Info</a>
+                    <a href="#contact">Contact Info</a>
                 </li>
             </ul>
         </nav>
     </header>
     
+    <section class="hero">
+        <div class="hero-CTA">
+        <img src="" alt="">
+        </div>
+    </section>
+
+    <section id="profile" class="about-me">
+        <div class="">
+            <h2>About Me</h2>
+            <!--Profile Picture-->
+                <img src="" alt="Brent's photo"/>
+        </div>
+        <div class="profileintro">
+            <p>
+                Hello, my name is Brent Albers. I am currently enroled in University of Arizona's coding boot camp. 
+            </p>
+        </div>
+    </section>
+
+    <section id="work" class="experience">
+        <div class="">
+            <h2>My Work Experience</h2>
+        </div>
+        <div class="projects">
+            <h3>Run Buddy</h3>
+            <div class="runbuddy-photo">
+            <img src="./assets/images/runbuddy/runbuddy.PNG" alt="runbuddy-photo"/>
+            </div>
+            <div class="project-info">
+                <p>
+                    Run Buddy was built as a service that allows runners sign up for personal training. This was my first go at html and css.
+                </p>
+            </div>
+            <div class="runners-photo">
+            <img src="./assets/images/runbuddy/runbuddy2.PNG" alt="runners"/>
+            </div>
+        </div>
+        <div class="projects">
+            <h3>Horiseon</h3>
+            <div class="horiseon-photo">
+            <img src="./assets/images/Horiseon.png" alt="horiseon"/>
+            </div>
+            <div class="project-info">
+                <p>
+                    Horiseon Info
+                </p>
+            </div>
+        <div class="projects">
+            <h3>Password Generator</h3>
+            <div class="password-photo">
+            <img src="./assets/images/passwordgenerator.png" alt="password-generator"/>
+            </div>
+            <div class="project-info">
+                <p>
+                    Coming Soon!
+                </p>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <h2>How to contact me</h2>
+        <form>
+            <label for="contactname">Input Your Name:</label>
+            <input type="text" id="contactname" name="contactname" placeholder="Name">
+
+            <label for="contactemail">Input Your Email:</label>
+            <input type="email" id="contactemail" name="contactemail" placeholder="Email:">
+
+            <label for="contactmessage">Input Your Message:</label>
+            <textarea id="contactmessage" name="contactmessage" placeholder="Message:"></textarea>
+
+            <button type="submit">Submit</button>
+        </form>
+    </section>
 </body>
 </html>
