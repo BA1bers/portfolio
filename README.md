@@ -1,6 +1,6 @@
 # Brent Albers Portfolio
 
-##Purpose
+## Purpose
 To build a portfolio to show employers about my projects and how they can get in contact with me.
 
 ## Installation
