@@ -12,39 +12,35 @@
 <body>
     <header>
         <h1>
-            <a href="/">BRENT ALBERS</a>
+            BRENT ALBERS
         </h1>
         <nav>
             <ul class="">
                 <li>
-                    <a class="" href="#profile">About Me</a>
+                    <a class="nav-link" href="#profile">About Me</a>
                 </li>
                 <li>
-                    <a class="" href="#work">Work Experience</a>
+                    <a class="nav-link" href="#work">Work Experience</a>
                 </li>
                 <li>
-                    <a class="" href="#contact">Contact Info</a>
+                    <a class="nav-link" href="#contact">Contact Info</a>
                 </li>
             </ul>
         </nav>
     </header>
     <div class="container">
-    <section class="hero">
-        <div class="hero-CTA">
-        <img src="" alt="">
-        </div>
-    </section>
-
     <section id="profile" class="about-me">
+        <div>
         <div class="flex-row">
             <h2 class="section-title">About Me</h2>
         </div>
         <div class="profile-photo">
         <img src="./assets/images/20210516-120549.jpg" alt="Brent's photo"/>
         </div>
-        <div class="flex-row">
+        </div>
+        <div class="about-bio">
             <p>
-                Hello, my name is Brent Albers. I am currently enrolled in University of Arizona's coding boot camp. 
+                Hi, my name is Brent Albers, and I am a full stack web development student at the University of Arizona. I also have a background in customer service and mechanical engineering. For more information, check out my LinkedIn. 
             </p>
         </div>
     </section>
@@ -55,45 +51,52 @@
                 My Work Experience
             </h2>
         </div>
-        <div class="projects">
-            <article class="project">
-            <div class="runbuddy-photo">
-            <img src="./assets/images/rb.PNG" alt="runbuddy-photo"/>
-            </div>
-            <div class="project-info">
-                <h3 class="project-name">Run Buddy</h3>
-                <h4 class="project-languages">Project Language(s): HTML,CSS</h4>
-                <p>Run Buddy was built as a service that allows runners sign up for personal training. This was my first go at html and css.</p>
-            </div>
-            </article>
-        </div>
-        <div class="projects">
+        <div class="projects first">
             <article class="project">
             <div class="horiseon-photo">
-            <img src="./assets/images/Horiseon.png" alt="horiseon"/>
+            <a href="https://ba1bers.github.io/Horiseon-webpage/">
+            <img src="./assets/images/Horiseon.png" alt="Horiseon"/>
+            </a>
             </div>
             <div class="project-info">
                 <h3 class="project-name">Horiseon</h3>
                 <h4 class="project-languages">Project Language(s): HTML,CSS</h4>
-                <p>
-                    Horiseon Info
-                </p>
+                    <p>Horiseon is there to offer its online services for helping you succeed in growing your business. They offer tools for search engine optimization, online reputation management, social media marketing.</p>
+            </div>
+            </article>
+    
+        </div>
+        <div class="moduleproject">
+        <div class="projects">
+            <article class="project">
+            <div class="runbuddy-photo">
+            <a href="https://ba1bers.github.io/runbuddy/">
+            <img src="./assets/images/rb.PNG" alt="runbuddy-photo"/>
+            </a>
+            </div>
+            <div class="project-info">
+                <h3 class="project-name">Run Buddy</h3>
+                <h4 class="project-languages">Project Language(s): HTML,CSS</h4>
+                    <p>Run Buddy was built as a service that allows runners sign up for personal training. This was my first go at html and css.</p>
             </div>
             </article>
         </div>
         <div class="projects">
-            <article class="project">
-            <div class="password-photo">
-            <img src="./assets/images/passwordgenerator.png" alt="password-generator"/>
+            <article class="project gladiator">
+            <a href="https://ba1bers.github.io/robot-gladiators/">
+            <div class="gladiator-photo">
+            <img src="./assets/images/robotgladiators.png" alt="robot-gladiator"/>
             </div>
-            <div class="project-info">
-                <h3 class="project-name">Password Generator</h3>
+            </a>
+            <div class="project-info gladiator-info">
+                <h3 class="project-name">Robot Gladiators</h3>
                 <h4 class="project-languages">Project Language(s): Javascript</h4>
                 <p>
-                    Coming Soon!
+                    Robot Gladiators was my first real step into building a website entirely out of Javascript.
                 </p>
             </div>
             </article>
+        </div>
         </div>
     </section>
 
@@ -110,10 +113,21 @@
             <input type="contactmessage" placeholder="Message" id="contactmessage" name="contactmessage" class="form-input" />
 
             <button type="submit">Submit</button>
+            <ul>
+                <li><strong>Email me @:</strong>brent.albers@yahoo.com</li>
+                <li><strong>Check out my projects on Github:</strong> <a href="https://github.com/BA1bers">BA1bers</a></li>
+                <li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/brent-albers-263561210/">Brent Albers</a></li>
+            </ul>
         </form>
         </div>
     </section>
     </div>
+    <footer>
+        <h2>Brent Albers Portfolio</h2>
+        <div>
+            &copy; 2021 BA1bers
+            </div>
+    </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
 </body>
 </html>

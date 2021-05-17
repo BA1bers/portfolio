@@ -1,14 +1,14 @@
 :root {
     --primary-color: rgb(134, 0, 0);
     --secondary-color: #80a8ff;
-    --tertiary-color: #053897;
+    --tertiary-color: #0a51d6;
 }
     *{
     box-sizing: border-box;
     margin: 0;
     padding: 0;
     }
-
+/*Header Navbar Starts*/
     header {
         padding: 20px 35px;
         background-color: var(--tertiary-color);
@@ -21,15 +21,16 @@
         background-size: cover;
         background-position: center;
         background-attachment: fixed;
+        z-index: 999;
     }
     header h1 {
         font-weight: bold;
         margin: 0;
         font-size: 36px;
-        color: var(--primary-color);
+        color: white;
         text-shadow: 0 0 10px rgba(0, 0, 0, 0.26);
+        margin-top: 10px;
     }
-
     header a {
         text-decoration: none;
         color: var(--primary-color);
@@ -60,92 +61,177 @@
         border-radius: 15px;
         text-shadow: none;
     }
-
+/*Header Navbar ends*/
+    footer {
+    background: var(--primary-color);
+    width: 100%;
+    padding: 20px 35px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    }
+    footer h2 {
+    color: white;
+    font-size: 30px;
+    margin: 0;
+    }
+    footer div {
+    color: white;
+    line-height: 1.5;
+    text-align: right;
+    margin-left: 20px;
+    }
+/*Footer Ends*/
     body {
     color: var(--tertiary-color);
     }
-    .contact-form {
-            border: 3px solid var(--primary-color);
-            background-color: var(--secondary-color);
-            padding: 20px;
-            color: black;
-            width: 50%;
-            margin: 3.5%;
-            border-radius: 15px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-        }
-    .contact-form button:hover {
-        background-color: var(--primary-color);
+    .nav-link {
+        font-size: 25px;
+        color: white;
     }
-    .contact-form h2 {
-        font-size: 24px;
-        margin: 0;
+/*About Me Starts*/
+    .about-me {
+        display: grid;
+        grid-template-columns: 6fr 4fr;
+        margin-bottom: 30px;
+        margin-top: 30px;
     }
-    .contact-form p {
-        margin: 5px 0 15px 0;
+    .profile-photo {
+        width: 60%;
+        height: auto;
+        text-align: center;
+        padding-left: 30px;
+
     }
-    .form-input {
-        border: 1px solid var(--secondary-color);
-        display: block;
-        padding: 7px 15px;
-        font-size: 16px;
-        color: var(--secondary-color);
-        width: 100%;
-        margin-bottom: 15px; 
-        border-radius: 10px;
-        background-color: rgba(255,255,255, 0.75);
-    }
-    .form-input:focus {
-        background-color: rgba(255,255,255, 1);
-        outline: none;
-    }
-    .contact-form label {
-        margin: 0 5px;
-    }
-    .contact-form button {
-        color: var(--secondary-color);
-        background-color: var(--tertiary-color);
-        border: none;
-        padding: 10px 20px;
-        font-size: 16px;
+    .profile-photo > img {
+        max-width: 100%;
         border-radius: 10px;
     }
+    .about-bio {
+        font-weight: bold;
+        font-size: 25px;
+        padding-top: 35px;
+    }
+/*About Me ends*/
+/*Work Experience Starts*/
     .projects {
         width: 100%;
         margin: 0 auto;
         display: flex;
         flex-wrap: wrap;
-        justify-content: center;
+        justify-content: space-around;
     }
     .project {
-        margin: 40px;
-        width: 100px;
-        flex: 2;
-        background: var(--secondary-color);
-        color: var(--primary-color);
+        border: 3px solid var(--primary-color);
+        background-color: var(--secondary-color);
+        padding: 20px;
+        color: black;
+        width: 90%;
+        margin: 3.5%;
+        border-radius: 15px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    }
+    .moduleproject {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-content: center;
+        margin-bottom: 25px;
+    }
+    .first {
+        max-width: 80%;
     }
     .runbuddy-photo {
-        margin: 10px;
         width: 100%;
         height: auto;
     }
 
-    .runbuddy-photo > img {
-        max-width: 70%;
+    .runbuddy-photo > a > img {
+        max-width: 100%;
     }
     .horiseon-photo {
-        margin: 10px;
         width: 100%;
         height: auto;
     }
-    .horiseon-photo > img {
-        max-width: 70%;
+    .horiseon-photo > a > img {
+        max-width: 100%;
     }
-    .password-photo {
-        margin: 10px;
+    .gladiator {
+        position: relative;
+    }
+    .gladiator-info {
+        position: absolute;
+        bottom: 0;
+        margin-bottom: 55px;
+    }
+    .gladiator-photo {
         width: 100%;
         height: auto;
+        margin-top: 80px;
+        margin-left: 100px;
     }
-    .password-photo > img {
-        max-width: 80%;
+    .gladiator-photo > a > img {
+        max-width: 100%;
     }
+    @media screen and (max-width: 770px) {
+        .about-me {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+        }
+        .moduleproject {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+        }
+        .gladiator {
+            max-width: 100%;
+        }
+    }
+/*Work Experience ends*/
+/*Contact info begins*/
+    .contact-form {
+        border: 3px solid var(--primary-color);
+        background-color: var(--secondary-color);
+        padding: 20px;
+        color: black;
+        margin: 3.5%;
+        border-radius: 15px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    }
+    .contact-form button:hover {
+    background-color: var(--primary-color);
+    }
+    .contact-form h2 {
+    font-size: 24px;
+    margin: 0;
+    }
+    .contact-form p {
+    margin: 5px 0 15px 0;
+    }
+    .form-input {
+    border: 1px solid var(--secondary-color);
+    display: block;
+    padding: 7px 15px;
+    font-size: 16px;
+    color: var(--secondary-color);
+    width: 100%;
+    margin-bottom: 15px; 
+    border-radius: 10px;
+    background-color: rgba(255,255,255, 0.75);
+    }
+    .form-input:focus {
+    background-color: rgba(255,255,255, 1);
+    outline: none;
+    }
+    .contact-form label {
+    margin: 0 5px;
+    }
+    .contact-form button {
+    color: var(--secondary-color);
+    background-color: var(--tertiary-color);
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 10px;
+}
+/*Contact info ends*/
